@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+<meta charset="UTF-8">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h3><b>Estrenos</b></h3>
+<div class="single-item">
+<img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf">
+<img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf">
+<img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf">
+<img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf">
+<img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf">
+</div>
+<play>
+<h3><b>Acción</b></h3>
+<a href="#"><button class="bt1"><b>Ver Todos</b></button></a>
+</play>
+<div class="variable-width">
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+</div><!--variable end-->
+<play>
+<h3><b>Aventura</b></h3>
+<a href="#"><button class="bt1"><b>Ver Todos</b></button></a>
+</play>
+<div class="variable-width">
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+</div><!--variable end-->
+<play>
+<h3><b>Animación</b></h3>
+<a href="#"><button class="bt1"><b>Ver Todos</b></button></a>
+</play>
+<div class="variable-width">
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+<a href="#"><img class="img-responsive" src="https://od.lk/s/OTJfMjY0MjgxNDlf"></a>
+</div><!--variable end-->
+</div><!--main end-->
+</div><!--container end-->
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+<script>
+$('.single-item').slick({
+  dots: true,
+  arrows: false,
+  mobileFirst: true,
+  autoplay: true,
+  // fade: true,
+  cssEase: 'ease'
+});
+$('.variable-width').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 3,
+  centerMode: false,
+  variableWidth: false,
+  centerPadding:'50px'
+});
+</script>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 0px;
+}
+ 
+/* ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  background:rgb(100,0,0);
+  -webkit-box-shadow: inset 0 0 6px rgba(100,0,0,0.5); 
+} */
+
+body{
+  background:black;
+  height:100vh;
+}
+.container{
+  background:transparent;
+  width:100%;
+  height:590px;
+  position:relative;
+  overflow-Y:scroll;
+  margin-top:0em;
+}
+play{
+  left:0;
+  right:0;
+  height:3.5em;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  
+}
+h3{
+  color:rgb(255,255,255);
+}
+.single-item img{
+  height:200px;
+}
+.single-item{
+  position:relative;
+}
+.slick-dots li button:before{
+  color:white;
+  opacity:1;
+  text-shadow:1px 2px 1px black;
+}
+.slick-dots li.slick-active button:before{
+  color:red;
+  opacity:1;
+}
+.variable-width  img{
+  width:200px;
+/*   padding-right:5px; */
+}
+.bt1{color:#fff;
+text-size:19pt;
+background:red;
+border:1px solid #fff;
+border-radius:3px;
+font-weight:bold;
+width:100%;
+padding:10;}
+
+.bt1:hover{color:#fff;
+text-size:19pt;
+background:green;
+border:1px solid #fff;
+border-radius:3px;
+font-weight:bold;
+width:100%;
+padding:10;
+}
+</style>
